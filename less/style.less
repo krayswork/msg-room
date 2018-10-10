@@ -1,0 +1,716 @@
+// цвета
+@text: #584C4C;
+@hero-text: #4C0A4C;
+@ref-color: rgb(193,35,225);
+
+// Шрифты 
+.b52(){
+	font-family: 'Monserat', sans-serif;
+	font-weight: 500;
+}
+.mons(){
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	// font-family: 'Poiret One', sans-serif;
+
+}
+html{
+	font-size: 10px;
+}
+body{
+	.b52();
+	// background: #fff url(../img/bg-img.jpg) right 35% no-repeat;
+}
+.background{
+	background: #fff url(../img/bg-img.jpg) center center no-repeat;
+	background-color: rgba(247,243,243,.8);
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	z-index: -1;
+}
+.white-bg{
+	background-color: rgba(247,243,243,.8);
+}
+.heder{
+	&-title{
+		.mons();
+		font-size: 4rem;
+		margin-top: 15rem;
+		margin-bottom: 5rem;
+		color: @hero-text; 
+	}
+	&-logo{
+		text-align: center;
+		margin: 0.5rem auto;
+		img{
+			width: 60rem;
+			height: 50rem;
+		}
+
+	}
+	
+}
+/* меню */
+.flex-container{
+	// margin-top: 2rem;
+	// padding-top: 2rem;
+	.mons();
+	display: flex;
+	justify-content: space-around;
+	border-top: 1px solid #4C0A4C;
+	border-bottom: 1px solid #4C0A4C;
+	height: 6rem;
+	align-items: center;
+}
+.flex-item{
+	font-size: 2rem;
+	// width: 13rem;
+	a{
+			color: @text;
+			text-decoration: none;
+			transition: all 0.2s;
+			padding: 18px 20px;
+			border-radius: 5px;
+			&:hover{
+				background-color: @hero-text;
+				color: #fff;
+				text-decoration: none;
+
+			}
+		}
+}
+/* страница с ценами */
+.price-content{
+	&-table{
+		width: 100%;
+		background: #fff;
+		border: 3px solid @hero-text;
+		border-collapse: separate;
+		padding: 0.2rem;
+		caption{
+			// margin: 2rem auto;
+			color: @hero-text;
+			text-align: center;
+			font-size: 2rem;
+			p{
+				color: @hero-text;
+			}
+		}
+	}
+}
+/* #DF34BA */
+.table-cell{
+	color: @text;
+	.b52();
+	border: 2px solid @hero-text;  
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	text-align: center;
+	font-size: 2rem;
+	&-left{
+		text-align: left;
+		padding-left: 2rem;
+	}
+}
+.under-text{
+	margin-top: 3rem;
+	font-size: 1.8rem;
+	color:@text;
+}
+.flex-discount{
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem auto;
+	p{
+		background-color: rgba(187,187,187,.25);
+		padding: 2rem;
+		border-radius: 2rem;
+	}
+}
+/* оформление контента под меню на главной */
+.main{
+	&-massage{
+		a{
+			text-decoration: none;
+			&:hover{
+				text-decoration: none;
+			}
+			img{
+				width: 40rem;
+				text-align: center;
+				margin: 5rem 2rem;
+				border-radius: 3.5rem;
+			}
+		}
+		&-text{
+			margin: 5rem 2rem;
+			a{
+				color: @hero-text;
+				text-decoration: none;
+				&:hover{
+					color: @ref-color;
+					text-decoration: none;
+				}
+			}
+			p{
+				color: @text;
+				.mons();
+				line-height: 2.6rem;
+				font-size: 2rem;
+				margin-top: 2rem;
+			}
+			span{
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+/* страница Зачем нужен массаж */
+.about-massage-text{
+	background-color: rgba(245,239,239,.9);
+	padding: 1.5rem;
+	// line-height: 4rem;
+	h1{
+		color: @hero-text;
+		text-align: center;
+	}
+	h3{
+		color: @hero-text;
+		text-indent: 5rem;
+		font-size: 3rem;
+	}
+	p{
+		color: @text;
+		.mons();
+		line-height: 3rem;
+		text-indent: 2rem;
+		font-size: 2rem;
+		text-align: justify;
+	}
+}
+/* страница контактов */
+.contact-content{
+	&-hero{
+		color: @hero-text;
+		font-size: 2rem;
+		// margin-top: -5rem;
+		margin-bottom: 5rem;
+		text-align: center;
+	}
+	// margin-top: 10rem;
+	img{
+		text-align: center;
+		width: 11rem;
+	}
+	&-heder{
+		// text-align: center;
+		a{
+			text-decoration: none;
+			color: @hero-text;
+			transition: all 0.2s;
+			&:hover{
+				color:@ref-color;
+				text-decoration: none;
+				font-size: 3rem;
+			}
+			small{
+				color: @hero-text;
+				font-size: 1.8rem;
+			}
+		}
+		text-align: left;
+	}
+}
+.under-line{
+	padding: 3rem;
+	border-bottom: 2px solid @hero-text;
+}
+.contacts{
+	padding: 3rem 0;
+	border-bottom: 2px solid @hero-text;
+}
+.contact-form{
+
+	&-input{
+		display: block;
+		margin: 0.5rem auto;
+	}
+	label{
+		.mons();
+		margin: 1rem auto;
+		font-size: 2rem;
+	}
+	textarea{
+		display: block;
+	}
+	&-btn{
+		.mons();
+		margin-top: 1rem;
+		margin-bottom: 3rem;
+		transition: all 0.5s;
+		&:hover{
+			background-color: darken(@hero-text, 6%);
+			color: #fff;
+		}
+	}
+	&-text{
+		margin: 2rem auto;
+		padding: 1rem;
+		// background-color: #aeaeae;
+		h1{
+			font-size: 3rem;
+			.b52();
+			color: @hero-text;
+		}
+		p{
+			font-size: 2rem;
+			.mons();
+			color: @hero-text;
+		}
+		a{
+			text-decoration: none;
+			.mons();
+			color: @hero-text;
+			font-size: 2rem;
+			transition: all 0.2s;
+			&:hover{
+				text-decoration: none;
+				color: @ref-color;
+				font-size: 2.1rem;
+			}
+		}
+		.right-arrow{
+			width: 40rem;
+			height: 6rem;
+		}
+	}
+}
+.map{
+	&-title{
+		font-size: 4rem;
+		color: @hero-text;
+		.b52();
+		text-align: center;
+		// height: 50rem;
+	}
+}
+#map{
+	margin-top: 3rem;
+	padding: 0;
+	iframe{
+	width: 100%;
+	height: 50rem;
+}
+}
+/* Страница c акциями */
+.discounts{
+	&-title{
+	font-size: 4rem;
+	color: @hero-text;
+	text-align: center;
+	border-bottom: 1px solid @hero-text;
+	width: 50%;
+	transform:translateX(50%);
+	padding: 3rem;
+	}
+	&-text{
+		margin: 0;
+		font-size: 2.5rem;
+		.mons();
+		color: @hero-text;
+		padding: 4rem;
+		border-bottom: 1px solid @hero-text;
+		a{
+			.b52();
+			font-size: 3rem;
+			text-decoration: none;
+			color: @text;
+			transition: all 0.3s;
+			&:hover{
+				color: @hero-text;
+			}
+		}
+	}
+}
+
+/* footer */
+
+.footer{
+	.mons();
+	background-color: @hero-text;
+	color: #fff;
+	height: 20rem;
+	&-info{
+		padding-left: 7rem;
+		padding-top: 2rem;
+		h4{
+			font-size: 2rem;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+			transition: all 0.2s;
+			&:hover{
+				color: @text;
+				font-size: 1.9rem;
+			}
+		}
+	}
+	&-socials{
+		height: 20rem;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		&-img{
+			display: inline-block;
+			// width: 5rem;
+			img{
+				width: 5rem;
+			}
+		}
+	}
+	&-address{
+		padding-top: 1.5rem;
+		a{
+			line-height: 1rem;
+			text-decoration: none;
+			color: #fff;
+			transition: all 0.2s;
+			&:hover{
+				color: @text;
+				font-size: 1.9rem;
+			}
+		}
+	}
+}	
+
+/* страница сертификаты */
+.certificates-content{
+	&-title{
+		margin: 3rem auto;
+		font-size: 4rem;
+		color: @hero-text;
+		text-align: center;
+		border-bottom: 2px solid @hero-text;
+	}
+	p{
+		padding: 3rem;
+		font-size: 2rem;
+		.mons();
+
+	}
+	&-img{
+		margin-top: 5rem;
+		text-align: center;
+		height: 25rem;
+		width: 25rem;
+		img{
+			border-radius: 1rem;
+		}
+}
+&-description{
+	padding: 5rem 0;
+	&_link{
+		font-size: 2.5rem;
+		text-decoration: none;
+		color: @text;
+		&:hover{
+			text-decoration: none;
+			// .b52();
+			color: @hero-text;
+		}
+
+	}
+}
+}
+
+/* Страница вопросов */
+.comment{
+	margin: 2rem auto;
+	padding: 2rem;
+	.mons();
+	font-size: 1.8rem;
+	border-bottom: 1px solid @hero-text;
+}
+.qs-date{
+	font-size: 1.4rem;
+}
+/* Страница наши цены стили табов "массаж" и "шугаринг" */
+.tabs{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+.tab{
+	width: 45%;
+	height: 4rem;
+	line-height: 4rem;
+	background-color: transparent;
+	color: @hero-text;
+	font-size: 2rem;
+	border-radius: .5rem;
+	transition: all 0.3s;
+	&:hover{
+		cursor: pointer;
+		background-color: @hero-text;
+		color: #fff;
+	}
+	&-content{
+		display: none;
+		margin: .5rem;
+		// padding: 2rem;
+		padding-left: 10rem;
+		padding-right: 10rem;
+		&-1 {
+			display: block;
+		}
+	}
+}
+/* Кнопка меню для маленьких экранов */
+.menu-wrap{
+	visibility: hidden;
+}
+.menu{
+	&-link{
+		z-index: 9;
+		display: block;
+		width: 5rem;
+		height: 5rem;
+		background-color: #fff;
+		border-radius: 50%;
+		box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+		position: fixed;
+		top: 2rem;
+		left: 2rem;
+		span, span:before, span:after{
+			display: block;
+			height: 2px;
+			width: 18px;
+			position: absolute;
+			left: 50%;
+			margin-left: -9px;
+			top: 50%;
+			margin-top: -1px;
+			background-color: #333;
+		}
+		span:before{
+			transition: all 0.2s;
+			content: '';
+			margin-top: -6px;
+		}
+		span:after{
+			transition: all 0.2s;
+			content: '';
+			margin-top: 4px;
+		}
+		&_active span{
+			background-color: transparent;
+			&:before{
+				transform: rotate(135deg);
+				margin-top: 0;
+			}
+			&:after{
+				transform: rotate(-135deg);
+				margin-top: 0;
+			}
+		}
+	}
+	background-color: purple;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+	left: -100vw;
+	&_active{
+		left: 0;
+	}
+	ul{
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	li{
+		width: 100vw;
+	}
+	a{
+		display: block;
+		width: 100%;
+		line-height: 4;
+		font-size: 2rem;
+		letter-spacing: 5px;
+		color: #fff;
+		transition: all 0.2s;
+		&:hover{
+			display: block;
+			width: 100vw;
+			background-color: rgba(255,255,255,.4);
+			text-decoration: none;
+		}
+	}
+	}
+	
+}
+/* /Кноапка меню для маленьких экранов */
+@media (max-width: 1199px){
+	.right-arrow{
+		display: none;
+	}
+}
+
+@media (max-width: 991px){
+
+	.contact-content-heder{
+		text-align: center;
+	}
+	// .contact-content-hero{
+	// 	h1{
+	// 		text-align: center;
+	// 	}
+	// }
+	.menu-wrap{
+	visibility: visible;
+}
+	.white-bg{
+		border-radius: 1rem;
+	}
+	.heder-title{
+		margin-top: 0;
+	}
+	.flex-container{
+		display: none;
+	}
+	.heder{
+		&-logo{
+			img{
+				width: 30rem;
+				height: 30rem;
+			}
+		}
+
+	}
+	.main{
+	  	&-massage{
+			text-align: center;
+			a{
+				img{
+					margin: 0;
+				}
+			}
+			&-text{
+				text-align: center;
+			}
+		}
+
+	}
+	.direction{
+		display: flex;
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
+	.right-arrow{
+		display: none;
+	}
+	.footer{
+		&-info{
+			display: none;
+		}
+		&-address{
+			display: none;
+		}
+		&-socials{
+			text-align: center;
+		}
+	}
+	#map{
+	iframe{
+	width: 100%;
+	height: 30rem;
+		}
+	}
+	.tab{
+	
+	&-content{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+}
+@media (max-width: 767px) {
+	// .contact-content-hero{
+	// 	h1{
+	// 		text-align: center;
+	// 	}
+	// }
+	.white-bg{
+	background-color: rgba(247,243,243,0);
+	}
+	.background{
+		background: #fff url(../img/bg-img.jpg) right bottom no-repeat;
+	}
+	.heder-logo{
+		margin-bottom: 3rem;
+	}
+	.heder-title{
+		font-size: 3.5rem;
+	}
+	.main-massage{
+		a{
+			img{
+				width: 25rem;
+			}
+		}
+		&-text{
+			p{
+				font-size: 1.5rem;
+			}
+		}
+	}
+	.table-cell{
+		font-size: 1rem;
+		&-left{
+			padding-left: 1rem;
+		}
+	}
+	.discounts-title{
+		font-size: 2.6rem;
+	}
+	.discounts-text{
+		font-size: 1.7rem;
+	}
+	footer{
+		background-color: @hero-text;
+	}
+	.footer{
+		height: 20rem;
+	}
+	.contact-content-hero{
+		h1{
+			text-align: center;
+			font-size: 3rem;
+		}
+	}
+	.call-back{
+		display: none;
+	}
+	#map{
+	iframe{
+	width: 100%;
+	height: 30rem;
+		}
+	}
+	.certificates-content-img{
+		text-align: center;
+	}
+	.tab{
+		height: 8rem;
+	}
+}
+
+

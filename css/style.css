@@ -1,0 +1,683 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Monserat', sans-serif;
+  font-weight: 500;
+}
+.background {
+  background: #ffffff url(../img/bg-img.jpg) center center no-repeat;
+  background-color: rgba(247, 243, 243, 0.8);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  z-index: -1;
+}
+.white-bg {
+  background-color: rgba(247, 243, 243, 0.8);
+}
+.heder-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  color: #4c0a4c;
+}
+.heder-logo {
+  text-align: center;
+  margin: 0.5rem auto;
+}
+.heder-logo img {
+  width: 60rem;
+  height: 50rem;
+}
+/* меню */
+.flex-container {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 1px solid #4C0A4C;
+  border-bottom: 1px solid #4C0A4C;
+  height: 6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex-item {
+  font-size: 2rem;
+}
+.flex-item a {
+  color: #584c4c;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 18px 20px;
+  border-radius: 5px;
+}
+.flex-item a:hover {
+  background-color: #4c0a4c;
+  color: #fff;
+  text-decoration: none;
+}
+/* страница с ценами */
+.price-content-table {
+  width: 100%;
+  background: #fff;
+  border: 3px solid #4c0a4c;
+  border-collapse: separate;
+  padding: 0.2rem;
+}
+.price-content-table caption {
+  color: #4c0a4c;
+  text-align: center;
+  font-size: 2rem;
+}
+.price-content-table caption p {
+  color: #4c0a4c;
+}
+/* #DF34BA */
+.table-cell {
+  color: #584c4c;
+  font-family: 'Monserat', sans-serif;
+  font-weight: 500;
+  border: 2px solid #4c0a4c;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.table-cell-left {
+  text-align: left;
+  padding-left: 2rem;
+}
+.under-text {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #584c4c;
+}
+.flex-discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem auto;
+}
+.flex-discount p {
+  background-color: rgba(187, 187, 187, 0.25);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+/* оформление контента под меню на главной */
+.main-massage a {
+  text-decoration: none;
+}
+.main-massage a:hover {
+  text-decoration: none;
+}
+.main-massage a img {
+  width: 40rem;
+  text-align: center;
+  margin: 5rem 2rem;
+  border-radius: 3.5rem;
+}
+.main-massage-text {
+  margin: 5rem 2rem;
+}
+.main-massage-text a {
+  color: #4c0a4c;
+  text-decoration: none;
+}
+.main-massage-text a:hover {
+  color: #c123e1;
+  text-decoration: none;
+}
+.main-massage-text p {
+  color: #584c4c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 2.6rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.main-massage-text span {
+  text-transform: uppercase;
+}
+/* страница Зачем нужен массаж */
+.about-massage-text {
+  background-color: rgba(245, 239, 239, 0.9);
+  padding: 1.5rem;
+}
+.about-massage-text h1 {
+  color: #4c0a4c;
+  text-align: center;
+}
+.about-massage-text h3 {
+  color: #4c0a4c;
+  text-indent: 5rem;
+  font-size: 3rem;
+}
+.about-massage-text p {
+  color: #584c4c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 3rem;
+  text-indent: 2rem;
+  font-size: 2rem;
+  text-align: justify;
+}
+/* страница контактов */
+.contact-content-hero {
+  color: #4c0a4c;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.contact-content img {
+  text-align: center;
+  width: 11rem;
+}
+.contact-content-heder {
+  text-align: left;
+}
+.contact-content-heder a {
+  text-decoration: none;
+  color: #4c0a4c;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.contact-content-heder a:hover {
+  color: #c123e1;
+  text-decoration: none;
+  font-size: 3rem;
+}
+.contact-content-heder a small {
+  color: #4c0a4c;
+  font-size: 1.8rem;
+}
+.under-line {
+  padding: 3rem;
+  border-bottom: 2px solid #4c0a4c;
+}
+.contacts {
+  padding: 3rem 0;
+  border-bottom: 2px solid #4c0a4c;
+}
+.contact-form-input {
+  display: block;
+  margin: 0.5rem auto;
+}
+.contact-form label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin: 1rem auto;
+  font-size: 2rem;
+}
+.contact-form textarea {
+  display: block;
+}
+.contact-form-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contact-form-btn:hover {
+  background-color: #310631;
+  color: #fff;
+}
+.contact-form-text {
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.contact-form-text h1 {
+  font-size: 3rem;
+  font-family: 'Monserat', sans-serif;
+  font-weight: 500;
+  color: #4c0a4c;
+}
+.contact-form-text p {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #4c0a4c;
+}
+.contact-form-text a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #4c0a4c;
+  font-size: 2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.contact-form-text a:hover {
+  text-decoration: none;
+  color: #c123e1;
+  font-size: 2.1rem;
+}
+.contact-form-text .right-arrow {
+  width: 40rem;
+  height: 6rem;
+}
+.map-title {
+  font-size: 4rem;
+  color: #4c0a4c;
+  font-family: 'Monserat', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+#map {
+  margin-top: 3rem;
+  padding: 0;
+}
+#map iframe {
+  width: 100%;
+  height: 50rem;
+}
+/* Страница c акциями */
+.discounts-title {
+  font-size: 4rem;
+  color: #4c0a4c;
+  text-align: center;
+  border-bottom: 1px solid #4c0a4c;
+  width: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  padding: 3rem;
+}
+.discounts-text {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #4c0a4c;
+  padding: 4rem;
+  border-bottom: 1px solid #4c0a4c;
+}
+.discounts-text a {
+  font-family: 'Monserat', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #584c4c;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.discounts-text a:hover {
+  color: #4c0a4c;
+}
+/* footer */
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  background-color: #4c0a4c;
+  color: #fff;
+  height: 20rem;
+}
+.footer-info {
+  padding-left: 7rem;
+  padding-top: 2rem;
+}
+.footer-info h4 {
+  font-size: 2rem;
+}
+.footer-info a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footer-info a:hover {
+  color: #584c4c;
+  font-size: 1.9rem;
+}
+.footer-socials {
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-socials-img {
+  display: inline-block;
+}
+.footer-socials-img img {
+  width: 5rem;
+}
+.footer-address {
+  padding-top: 1.5rem;
+}
+.footer-address a {
+  line-height: 1rem;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footer-address a:hover {
+  color: #584c4c;
+  font-size: 1.9rem;
+}
+/* страница сертификаты */
+.certificates-content-title {
+  margin: 3rem auto;
+  font-size: 4rem;
+  color: #4c0a4c;
+  text-align: center;
+  border-bottom: 2px solid #4c0a4c;
+}
+.certificates-content p {
+  padding: 3rem;
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.certificates-content-img {
+  margin-top: 5rem;
+  text-align: center;
+  height: 25rem;
+  width: 25rem;
+}
+.certificates-content-img img {
+  border-radius: 1rem;
+}
+.certificates-content-description {
+  padding: 5rem 0;
+}
+.certificates-content-description_link {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #584c4c;
+}
+.certificates-content-description_link:hover {
+  text-decoration: none;
+  color: #4c0a4c;
+}
+/* Страница вопросов */
+.comment {
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #4c0a4c;
+}
+.qs-date {
+  font-size: 1.4rem;
+}
+/* Страница наши цены стили табов "массаж" и "шугаринг" */
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+.tab {
+  width: 45%;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: transparent;
+  color: #4c0a4c;
+  font-size: 2rem;
+  border-radius: .5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.tab:hover {
+  cursor: pointer;
+  background-color: #4c0a4c;
+  color: #fff;
+}
+.tab-content {
+  display: none;
+  margin: .5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.tab-content-1 {
+  display: block;
+}
+/* Кнопка меню для маленьких экранов */
+.menu-wrap {
+  visibility: hidden;
+}
+.menu {
+  background-color: purple;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  left: -100vw;
+}
+.menu-link {
+  z-index: 9;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+}
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  margin-top: -1px;
+  background-color: #333;
+}
+.menu-link span:before {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  content: '';
+  margin-top: -6px;
+}
+.menu-link span:after {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  content: '';
+  margin-top: 4px;
+}
+.menu-link_active span {
+  background-color: transparent;
+}
+.menu-link_active span:before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-top: 0;
+}
+.menu-link_active span:after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-top: 0;
+}
+.menu_active {
+  left: 0;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.menu ul li {
+  width: 100vw;
+}
+.menu ul a {
+  display: block;
+  width: 100%;
+  line-height: 4;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.menu ul a:hover {
+  display: block;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+/* /Кноапка меню для маленьких экранов */
+@media (max-width: 1199px) {
+  .right-arrow {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .contact-content-heder {
+    text-align: center;
+  }
+  .menu-wrap {
+    visibility: visible;
+  }
+  .white-bg {
+    border-radius: 1rem;
+  }
+  .heder-title {
+    margin-top: 0;
+  }
+  .flex-container {
+    display: none;
+  }
+  .heder-logo img {
+    width: 30rem;
+    height: 30rem;
+  }
+  .main-massage {
+    text-align: center;
+  }
+  .main-massage a img {
+    margin: 0;
+  }
+  .main-massage-text {
+    text-align: center;
+  }
+  .direction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .right-arrow {
+    display: none;
+  }
+  .footer-info {
+    display: none;
+  }
+  .footer-address {
+    display: none;
+  }
+  .footer-socials {
+    text-align: center;
+  }
+  #map iframe {
+    width: 100%;
+    height: 30rem;
+  }
+  .tab-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .white-bg {
+    background-color: rgba(247, 243, 243, 0);
+  }
+  .background {
+    background: #ffffff url(../img/bg-img.jpg) right bottom no-repeat;
+  }
+  .heder-logo {
+    margin-bottom: 3rem;
+  }
+  .heder-title {
+    font-size: 3.5rem;
+  }
+  .main-massage a img {
+    width: 25rem;
+  }
+  .main-massage-text p {
+    font-size: 1.5rem;
+  }
+  .table-cell {
+    font-size: 1rem;
+  }
+  .table-cell-left {
+    padding-left: 1rem;
+  }
+  .discounts-title {
+    font-size: 2.6rem;
+  }
+  .discounts-text {
+    font-size: 1.7rem;
+  }
+  footer {
+    background-color: #4c0a4c;
+  }
+  .footer {
+    height: 20rem;
+  }
+  .contact-content-hero h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .call-back {
+    display: none;
+  }
+  #map iframe {
+    width: 100%;
+    height: 30rem;
+  }
+  .certificates-content-img {
+    text-align: center;
+  }
+  .tab {
+    height: 8rem;
+  }
+}

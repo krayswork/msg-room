@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Студия массажа Евгении Збишко - наши контакты</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500&amp;subset=cyrillic" rel="stylesheet">
+  </head>
+ <body>
+    <!-- Меню для маленьких экранов -->
+    <div class="menu-wrap">
+      <a class="menu-link" href="#">
+        <span></span>
+      </a>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="ourprices.html">Наши цены</a></li>
+          <li><a href="discounts.html">Акции</a></li>
+          <li><a href="сertificates.html">Сертификаты</a></li>
+          <li><a href="feedback.php">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /меню для маленьких экранов -->
+  <div class="background"></div>
+  <div class="heder">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="heder-logo">
+                <a href="index.html"><img src="img/msg-logo.png" alt="логотип"></a>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+  <div class="contact-content">
+    <div class="container">
+      <div class="white-bg">
+        <div class="not-index">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="flex-container">
+                <div class="flex-item">
+                  <a href="index.html">Главная</a>
+                </div>
+                <div class="flex-item">
+                  <a href="ourprices.html">Наши цены</a>
+                </div>
+                <div class="flex-item">
+                  <a href="discounts.html">Акции</a>
+                </div>
+                <div class="flex-item">
+                  <a href="сertificates.html">Сертификаты</a>
+                </div>
+                <div class="flex-item">
+                  <a href="feedback.php">Отзывы</a>
+                </div>
+                <div class="flex-item">
+                  <a href="contacts.html">Контакты</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- Контент под меню -->
+        <div class="under-line">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="contact-content-hero">
+            <h1>Обязательная предварительная запись!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-2 col-md-3 col-md-offset-1 text-center">
+          <a class="call-back" href="tel:+79631913103"><img src="img/call-back.png" alt="Позвоните нам!"></a>
+        </div>
+        <div class="col-lg-8 col-md-8">
+              <h1 class="contact-content-heder">
+            <a href="tel:+79631913103">Позвоните нам <br>и запишитесь на сеанс! <br><small>Не смогли дозвониться? Мы обязательно Вам перезвоним</small></a>
+          </h1>
+        </div>
+      </div>
+      </div>
+      <div class="contacts">   <!-- для линии под блоком контактов -->
+        <div class="row">
+        <!-- текст слева от формы -->
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+          <div class="contact-form-text">
+            <h1 class="contact-form-text-title">
+              Напишите нам для предварительной записи
+              <picture>
+                <source class="right-arrow" srcset="img/arrow-right.svg" type="image/">
+                <img class="right-arrow" src="img/arrow-right.png" alt="">
+              </picture>
+            </h1>
+            <p>Или свяжитесь с нами по телефону:</p>
+            <a href="tel:+79631913103">2713-103</a><br>
+            <a href="tel:+79631913103">+79631913103</a>
+            <h1>Мы находимсяпо адресу:</h1>
+            <p>ул.Батурина 20. Салон "Алхимия стиля"</p>
+            <h1>Режим работы:</h1>
+            <p>10:00-21:00<br>Воскресенье - выходной</p>
+          </div>
+        </div>
+        <!-- форма -->
+        <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-0">
+          <div class="contact-form">
+            <form id="form" action="php/sendform.php" method="post">
+            <label for="#">Ваше имя</label>
+            <input class="contact-form-input form-control input-lg" type="text" name="name">
+            <label for="#">Номер телефона</label>
+            <input class="contact-form-input form-control input-lg" type="phone" name="phone">
+            <label for="#">Текст сообщения</label>
+            <textarea class="form-control" type="text" cols="50" rows="5" name="text"></textarea>
+            <button class="contact-form-btn btn btn-lg" type="submit">Отправить</button>
+          </form>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- блок с картой -->
+      <div class="map">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="map-title">
+            Схема проезда
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div id="map">
+           <!--  <a class="dg-widget-link" href="http://2gis.ru/krasnoyarsk/firm/985690699650024/center/92.9143810272217,56.051562022049836/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Красноярска</a><div class="dg-widget-link"><a href="http://2gis.ru/krasnoyarsk/firm/985690699650024/photos/985690699650024/center/92.9143810272217,56.051562022049836/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/krasnoyarsk/center/92.914379,56.051339/zoom/16/routeTab/rsType/bus/to/92.914379,56.051339╎Каприз, салон красоты?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Каприз, салон красоты</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"borderColor":"#a3a3a3","pos":{"lat":56.051562022049836,"lon":92.9143810272217,"zoom":16},"opt":{"city":"krasnoyarsk"},"org":[{"id":"985690699650024"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript> -->
+           <a class="dg-widget-link" href="http://2gis.ru/krasnoyarsk/firm/985690699542056/center/92.9020643234253,56.042070346846224/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Красноярска</a><div class="dg-widget-link"><a href="http://2gis.ru/krasnoyarsk/firm/985690699542056/photos/985690699542056/center/92.9020643234253,56.042070346846224/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/krasnoyarsk/center/92.902069,56.041844/zoom/16/routeTab/rsType/bus/to/92.902069,56.041844╎Алхимия стиля, салон красоты?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Алхимия стиля, салон красоты</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":56.042070346846224,"lon":92.9020643234253,"zoom":16},"opt":{"city":"krasnoyarsk"},"org":[{"id":"985690699542056"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+        <div class="container">
+         <div class="footer">  
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <div class="footer-info">
+                <h4>Студия массажа Евгении Збишко</h4>
+                <p><a href="about-massage.html">Массаж</a></p>
+                <p><a href="#">Шугаринг</a></p>
+              </div>
+            </div>
+              <div class="col-lg-6 col-md-4">
+                <div class="footer-socials">
+                  <div class="footer-socials-img">
+                    <a href="https://vk.com/msgstudiokrsk" target="_blank">
+                      <picture>
+                        <source srcset="img/vk.svg" type="image/svg">
+                        <img src="img/vk.png" alt="Вконтакте">
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="footer-socials-img">
+                    <a href="https://ok.ru/group/54954736353396" target="_blank">
+                      <picture class="socials-img">
+                        <source srcset="img/ok.svg" type="image/svg">
+                        <img src="img/ok.png" alt="Одноклассники">
+                      </picture>
+      
+                    </a>            
+                  </div>
+                  <div class="footer-socials-img">
+                    <a href="https://www.instagram.com/msgstudio_krsk/" target="_blank">
+                      <picture class="socials-img">
+                        <source srcset="img/insta.svg" type="image/svg">
+                        <img src="img/insta.png" alt="Инстаграм">
+                      </picture>
+                    </a>
+                  </div>
+                    <div class="footer-socials-img">
+                      <a href="whatsapp://send?phone=+79631913103">
+                        <picture class="socials-img">
+                          <source srcset="img/whatsapp.svg" type="image/svg">
+                          <img src="img/whatsapp.png" alt="WhatsApp">
+                        </picture>
+                      </a>
+                    </div>
+                    <div class="footer-socials-img">
+                      <a href="viber://chat?number=79631913103" rel="nofollow">
+                        <picture class="socials-img">
+                          <source srcset="img/viber.svg" type="image/svg">
+                          <img src="img/viber.png" alt="Viber">
+                        </picture>
+                      </a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <div class="footer-address">
+                  <h4>г.Красноярск</h4>
+                  <h4>Батурина 20</h4>
+                  <p><a href="tel:2713103">2-713-103</a></p>
+                  <p><a href="tel:2770377">277-03-77</a></p>
+                </div>
+              </div>
+          </div>
+         </div>  
+        </div>
+      </footer>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/main.js"></script>
+  <script>
+  $(document).ready(function(){
+    var link = $('.menu-link');
+    var link_active = $('.menu-link_active');
+    var menu = $('.menu');
+    link.click(function(){
+      link.toggleClass('menu-link_active');
+      menu.toggleClass('menu_active');
+    });
+    link_active.click(function(){
+      link.removeClass('menu-link_active');
+    });
+  });
+  </script>
+ </body>
+</html>
